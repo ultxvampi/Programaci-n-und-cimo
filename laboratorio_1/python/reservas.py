@@ -1,23 +1,28 @@
-def main():
-   nombre = input("Ingrese su nombre para reservar:") #tengo q ver donde meto esto para que srivaaaa
-   capacidad = 5
-   reservas = []
-   def hay_cupo(reservas, capacidad):
-     while capacidad < 5:
+def hay_cupo(reservas, capacidad,nombre):
+   if capacidad > 0:
       print("Reserva registrada")
       capacidad -= 1
       print(f"Cupos disponibles: {capacidad}")
       reservas.append(nombre)
-      return hay_cupo
-     while capacidad > 5:
-      print("Cupos llenos")
-      break
-    
-   def mostrar_resumen(reservas, capacidad):
-    """Muestra cuántos cupos se usaron y la lista de reservas aceptadas."""
-    while capacidad == 0:
+   else:
+      print("Cupos llenos... :c")
+   return capacidad
+def mostrar_resumen(reservas, capacidad):
+   if capacidad == 0:
        print(f"Ya no hay más cupos/n" \
-       "---Resumen--/n" \
+       "---Resumen---" \
        "Reservas aceptadas: {reservas} {capacidad}/5")
-       return mostrar_resumen
-main()
+       print(f"Cupos disponibles: {capacidad}") 
+   else: 
+       print(f"Aún quedan {capacidad} cupos")
+def main():
+   capacidad = 5
+   reservas = []
+   
+   while capacidad > 0: #nosirve, porarreglar, yasirve
+      nombre = input("Ingrese su nombre para reservar o salir para obviamente salir:")
+      if nombre.lower() == "salir":
+          break
+      capacidad = hay_cupo(reservas, capacidad,nombre)
+   mostrar_resumen(reservas, capacidad)
+main() #>:C 
