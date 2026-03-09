@@ -5,7 +5,7 @@ int main(){
    const double gc = 0.6;
    const double t = -273.15;
    double v, T ;
-   cout << "Ingrese la velocidad (v) y la temperatura en kelvin (T, no debe ser menor que -273.15):" << endl;
+   cout << "Ingrese la velocidad (v) y la temperatura en kelvin (T, no debe ser mayor que -273.15):" << endl;
    cin >> v >> T;
    double j = (vs + gc) * T; /// vel.sonido
    double M = v/c; // número de Mach
