@@ -49,4 +49,4 @@ switch (social) {
      cout << "Error..." << endl;
 }
 }
-/// estoseguro se hace con for tmbn pero me cuestaaaa
+/// estoseguro se hace con for tmbn pero me cuestaaaa, creo q lo logre pero nose, eso de % no lo entiendo bien
