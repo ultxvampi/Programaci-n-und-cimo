@@ -46,4 +46,4 @@ int main(){
 }
 //sospecho q no lo entendí bien y no da lo que debería pero
 //mil disculpassssssssssssssssss :"((, porq lo meto en la terminal y me deja ponervalores
-// pero nada q ver con lo q debería de ser (creop)
+// pero nada q ver con lo q debería de ser (creop) perdón
